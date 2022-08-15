@@ -20,7 +20,7 @@ error => {
 const bookRoute = require('./node-backend/routes/book.routes');
 const app = express();
 
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(bodyParser.urlencoded({
     extended: false
 }));
