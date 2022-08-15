@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname,'dist/bookshop')));
 
 app.use('/api', bookRoute);
 
-const port = process.env.port || 8000;
+const port = 8000;
 
 app.listen(port, () => {
     console.log('Listening Port is on:', +port);
